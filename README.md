@@ -28,17 +28,38 @@ Dibuat dengan Python dan library **discord.py**.
 
 ```mermaid
    graph TD
-    A[discord-bot/] --> B[config.json<br/># token & prefix]
-    A --> C[index.js<br/># file utama bot]
-    A --> D[package.json<br/># dependencies & metadata]
-    A --> E[commands/]
-    E --> E1[ping.js]
-    E --> E2[help.js]
-    A --> F[events/]
-    F --> F1[ready.js]
-    F --> F2[message.js]
-    A --> G[node_modules/<br/># otomatis setelah npm install]
-    A --> H[.gitignore<br/># biar aman]
+A[Marketplace Project] --> B[Backend]
+    A --> C[Frontend]
+    A --> D[Database]
+    A --> E[Docs]
+
+    %% Backend
+    B --> B1[config/]
+    B --> B2[controllers/]
+    B --> B3[models/]
+    B --> B4[routes/]
+    B --> B5[services/]
+    B --> B6[tests/]
+    B --> B7[server.js]
+
+    %% Frontend
+    C --> C1[public/]
+    C --> C2[src/]
+    C2 --> C21[components/]
+    C2 --> C22[pages/]
+    C2 --> C23[styles/]
+    C2 --> C24[utils/]
+    C --> C3[package.json]
+
+    %% Database
+    D --> D1[migrations/]
+    D --> D2[seeds/]
+    D --> D3[schema.sql]
+
+    %% Docs
+    E --> E1[README.md]
+    E --> E2[PITCH_DECK.pdf]
+    E --> E3[API_DOCS.md]
 ```
 
 ## 🚀 Instalasi
