@@ -25,6 +25,22 @@ Dibuat dengan Python dan library **discord.py**.
 - ⏰ Reminder: mengatur pengingat dalam server
 - 📊 Polling: membuat polling untuk voting komunitas
 
+
+```mermaid
+   graph TD
+    A[discord-bot/] --> B[config.json<br/># token & prefix]
+    A --> C[index.js<br/># file utama bot]
+    A --> D[package.json<br/># dependencies & metadata]
+    A --> E[commands/]
+    E --> E1[ping.js]
+    E --> E2[help.js]
+    A --> F[events/]
+    F --> F1[ready.js]
+    F --> F2[message.js]
+    A --> G[node_modules/<br/># otomatis setelah npm install]
+    A --> H[.gitignore<br/># biar aman]
+```
+
 ## 🚀 Instalasi
 1. Clone repository:
    ```bash
