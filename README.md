@@ -43,7 +43,33 @@ Dibuat dengan Python dan library **discord.py**.
   pip install -r requirements.txt
 ```
 
----
+4. Masukkan Discord Bot Token ke dalam config.json:
+   ```bash
+   {
+    "TOKEN": "YOUR_DISCORD_BOT_TOKEN",
+    "PREFIX": "!"
+   }
+
+
+5. Jalankan bot:
+```bash
+   python bot.py
+```
+
+6. Save .env
+   TOKEN → isi dengan token asli bot kamu dari Discord Developer Portal
+   PREFIX → tanda perintah untuk bot, misalnya !ping, !help.
+```env
+   TOKEN=YOUR_DISCORD_BOT_TOKEN
+   PREFIX=!
+```
+
+   Lalu di index.js atau bot.js panggil pakai dotenv:
+```bash
+   require("dotenv").config();
+   const TOKEN = process.env.TOKEN;
+   const PREFIX = process.env.PREFIX;
+```
 
 <h3 align="center" style="color:#39ff14; font-size:1.5rem;">
 💡 ☕ Traktir Kopi & Nasi Padang / Nasi Gorengnya ya cuy! 😄
